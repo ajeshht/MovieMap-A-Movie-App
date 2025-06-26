@@ -1,0 +1,34 @@
+.movie-list-header{
+    padding: 10px 30px;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.movie-list-heading{
+    font-size: 27px;
+
+}
+.movie-filter{
+    list-style: none;
+    font-size: 18px;
+}
+.movie-filter-item:hover{
+    transform: scale(1.1);
+}
+.movie-filter-item{
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.movie-filter-item.active{
+    border-bottom: 1px solid #3e5994;
+}
+.movie-sorting{
+    border: none;
+    outline: none;
+    border-radius:5px;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: inherit;
+    height: 30px;
+    padding: 0 5px;
+    margin: 0 10px;
+}
