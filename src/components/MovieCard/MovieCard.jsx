@@ -1,18 +1,16 @@
 import './MovieCard.css'
 import TopRated from '../../Assets/top-rated.png'
-const MovieCard = () => {
+const MovieCard = ({movie}) => {
   return (
-    <a href="" className='movie-card'>
-        <img src="https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/1500x1500/products/90301/98769/the-creator-original-movie-poster-one-sheet-final-style-buy-now-at-starstills__81077.1697644483.jpg?c=2" alt="movieposter" className='movie-poster'/>
+    <a href={`https://www.themoviedb.org/movie/${movie.id}`} target='_blank' className='movie-card'>
+        <img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} alt="movieposter" className='movie-poster'/>
         <div className="movie-details">
-            <h3 className='movie-details-heading'>Movie Name</h3>
+            <h3 className='movie-details-heading'>{movie.original_title}</h3>
             <div className="align-center movie-data-rating">
-                <p>10-12-2025</p>
-                <p>8.0 <img src={TopRated} alt="rateicon" className='card-emoji' /></p>
+                <p>{movie.release_date}</p>
+                <p>{movie.vote_average}<img src={TopRated} alt="rateicon" className='card-emoji' /></p>
             </div>
-            <p className='movie-description'>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis cum architecto laborum ex vitae possimus!
-            </p>
+            <p className='movie-description'>{movie.overview.slice(0,100)+"..."}</p>
         </div>
     </a>
   )

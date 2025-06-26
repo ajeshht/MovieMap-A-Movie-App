@@ -11,12 +11,12 @@
     list-style: none;
     font-size: 18px;
 }
-.movie-filter-item:hover{
-    transform: scale(1.1);
-}
+ 
+
 .movie-filter-item{
     padding: 5px 10px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 .movie-filter-item.active{
     border-bottom: 1px solid #3e5994;

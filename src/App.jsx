@@ -1,4 +1,5 @@
 import './App.css'
+import Footer from './components/Footer/Footer'
 import MovieList from './components/MovieList/MovieList'
 import Navbar from './components/Navbar/Navbar'
 
@@ -8,6 +9,7 @@ function App() {
       <Navbar/>
 
       <MovieList/>
+      <Footer/>
       
     </div>
   )
