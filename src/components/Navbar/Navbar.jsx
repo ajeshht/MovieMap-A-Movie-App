@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './Navbar.css'
 import Popular from '../../Assets/popular.png'
 import TopRated from '../../Assets/top-rated.png'
@@ -7,7 +7,7 @@ import Trending from '../../Assets/trending.png'
 function Navbar() {
   return (
     
-        <nav className='navbar'>
+        <nav className='navbar' >
 
             <h1>CineScope</h1>
 

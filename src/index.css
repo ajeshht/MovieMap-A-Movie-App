@@ -7,8 +7,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body{
-  background-color: rgba(13, 9, 56, 0.947);
+  background-image:url('../src/Assets/background.jpg') ;
   color: rgb(235, 229, 229);
   font-family: "Montserrat", sans-serif;
 }
