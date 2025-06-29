@@ -9,7 +9,7 @@ function Navbar() {
     
         <nav className='navbar' >
 
-            <h1>CineScope</h1>
+            <h1>MovieMap</h1>
 
             <div className="navbar-links">
                 <a href="">Popular <img src={Popular} alt="Popular emoji" className='navbar-emoji' /></a>
